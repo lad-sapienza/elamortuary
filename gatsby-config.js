@@ -12,7 +12,7 @@ require("dotenv").config({
  */
 
 module.exports = {
-  pathPrefix: process.env.NODE_ENV === 'production' ? '/sCMS/' : '/',
+  pathPrefix: process.env.NODE_ENV === 'production' ? '/elamortuary/' : '/',
   siteMetadata: {
     title: `ELAMortuary`,
     description: `ELAMortuary ... todo description`,
