@@ -1,0 +1,39 @@
+---
+title: "Data"
+date: "2023-10-01"
+slug: "data"
+description: ""
+menu_position: 3
+---
+
+import DataTb from "../modules/datatb.js"
+
+
+
+
+<DataTb
+  path2csv="../data/elamortuary.csv"
+  columns={[
+    {
+      name: "Database ID",
+      selector: row => row['Database ID'],
+      sortable: true,
+      cell: row => (<a href="">{row['Database ID']}</a>),
+    },
+    {
+      name: "Proposed date",
+      selector: row => row['Proposed date'],
+      sortable: true,
+    },
+    {
+      name: "Site",
+      selector: row => row.Site,
+      sortable: true,
+    },
+    {
+      name: "Field No.",
+      selector: row => row['Field No.'],
+      sortable: true,
+    },
+  ]}
+/>

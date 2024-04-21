@@ -19,9 +19,10 @@ const HeaderSection = ({ siteTitle }) => (
           />
         </Link>
         <div className="text-start ms-3">
-          <h1>s:CMS</h1>
-          <p className="lead">Static site Content Management System is developend and
-          maintained by LAD: Laboratorio di Archeologia Digitale alla Sapienza</p>
+          <h1>ELAMortuary</h1>
+          <p className="lead">
+            Some description for the project
+          </p>
         </div>
       </div>
     </Container>

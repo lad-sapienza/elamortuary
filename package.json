@@ -1,7 +1,7 @@
 {
-  "name": "@lab-archeologia-digitale/gatsby-directus-ui",
+  "name": "@lab-archeologia-digitale/elamortuary",
   "private": false,
-  "description": "A simple starter to get up and developing quickly with Gatsby 5 and Bootstrap 5",
+  "description": "ELAMortuary",
   "version": "2.0.4",
   "author": "Julian Bogdani <julian.bogdani@uniroma1.it>",
   "dependencies": {
