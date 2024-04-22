@@ -1,5 +1,5 @@
 ---
-title: "The WebGIS"
+title: "Map of the sites"
 date: "2023-10-01"
 slug: "webgis"
 description: "An easy to use component for building powerful and fully customizable maps"
@@ -7,7 +7,7 @@ menu_position: 1
 ---
 
 
-# MapComp: Map Component
+# Map of the sites
 
 
 import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
@@ -19,7 +19,7 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       fitToContent={true}
       checked={true}
       popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.id}</strong> ${attribs.site}`; }
+      (attribs) => { return `<p><strong>${attribs.site}</strong>`; }
       }
       pointToLayer={
         (f, ll) => {
