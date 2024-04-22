@@ -23,31 +23,33 @@ const FooterSection = () => {
           </div>
           <div className="p-3 border-start border-primary">
             <p className="p-s-3">
-              <strong>s:CMS</strong> è un progetto ideato e sviluppato dal{" "}
-              <br />
+              The <strong>ELAMortuary</strong> database is the outcome of the
+              project
+              <em>
+                Villages to Empire: 4,000 Years of Death and Society in Elam
+                (4500-525 BCE)
+              </em>
+              carried out by the project researcher, Yasmina Wicks, in the frame
+              of a
               <a
-                href="https://lad.saras.uniroma1.it"
+                href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships"
+                rel="noreferrer noopener"
                 target="_blank"
-                rel="noreferrer"
               >
-                LAD: Laboratorio di Archeologia Digitale alla Sapienza
+                Marie Skłodowska-Curie Individual Fellowship
               </a>
-              <br />
+              hosted by{" "}
               <a
-                href="https://github.com/lab-archeologia-digitale/gatsby-directus-ui"
+                href="https://www.unior.it"
+                rel="noreferrer noopener"
                 target="_blank"
-                rel="noreferrer"
               >
-                Code
-              </a>
-              &nbsp;|&nbsp;
-              <a
-                href="https://github.com/lab-archeologia-digitale/gatsby-directus-ui/issues"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Issues
-              </a>
+                Università di Napoli, “L’Orientale”
+              </a>{" "}
+              (2022-2024). <br />
+              The project research and database were funded by the European
+              Union’s Horizon 2020 research and innovation programme under the
+              Marie Skłodowska-Curie grant agreement No. 892581 — ELAMortuary.
             </p>
           </div>
         </div>
