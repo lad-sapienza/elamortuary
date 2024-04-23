@@ -24,9 +24,9 @@ const FooterSection = () => {
             <p className="p-s-3">
               The <strong>ELAMortuary</strong> database is the outcome of the
               project 
-              <em> 
-                Villages to Empire: 4,000 Years of Death and Society in Elam
-                (4500-525 BCE) 
+              <em>
+              Villages to Empire: 4,000 Years of Death and Society in Elam
+              (4500-525 BCE)
               </em> 
               carried out by the project researcher, Yasmina Wicks, in the frame
               of a {" "}
