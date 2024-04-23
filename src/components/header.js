@@ -10,7 +10,7 @@ const HeaderSection = ({ siteTitle }) => (
       <div className="d-sm-flex align-items-center text-center">
         <Link to={withPrefix("/")}>
           <StaticImage
-            src="../images/scms-lad.png"
+            src="../images/elamortuary-logo.png"
             width={150}
             quality={80}
             formats={["AUTO", "WEBP"]}
