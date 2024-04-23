@@ -31,7 +31,7 @@ const FooterSection = () => {
               carried out by the project researcher, Yasmina Wicks, in the frame
               of a
               <a
-                href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships"
+                href="https://cordis.europa.eu/project/id/892581"
                 rel="noreferrer noopener"
                 target="_blank"
               >
