@@ -29,14 +29,14 @@ const FooterSection = () => {
                 (4500-525 BCE)
               </em>
               carried out by the project researcher, Yasmina Wicks, in the frame
-              of a
+              of a {" "}
               <a
                 href="https://cordis.europa.eu/project/id/892581"
                 rel="noreferrer noopener"
                 target="_blank"
               >
                 Marie Skłodowska-Curie Individual Fellowship
-              </a>
+              </a>{" "}
               hosted by{" "}
               <a
                 href="https://www.unior.it"
