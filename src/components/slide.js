@@ -9,51 +9,35 @@ function Slide() {
       <Carousel>
         <Carousel.Item>
           <StaticImage
-            src="../images/slide_1.jpg"
+            src="../images/susa.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="slide1"
+            alt="Susa"
           />
-          {/*  <Carousel.Caption>
-            <h3>LORE IPSUM DOLOR SIT AMET</h3>
-            <span className="subTitle">
+           <Carousel.Caption>
+            <h3>Susa</h3>
+            {/* <span className="subTitle">
               Nulla vitae elit libero, a pharetra augue mollis interdum.
             </span>
             <br></br>
-            <button className="btn btn-primary m-4">LINK</button>
-          </Carousel.Caption> */}
+            <button className="btn btn-primary m-4">LINK</button> */}
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/slide_2.jpg"
+            src="../images/chogha_zanbil.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="slide2"
+            alt="Chogha Zanbil"
           />
-          {/* <Carousel.Caption>
-            <h3>LORE IPSUM DOLOR SIT AMET</h3>
-            <span className="subTitle">
+          <Carousel.Caption>
+            <h3>Chogha Zanbil</h3>
+            {/* <span className="subTitle">
               Nulla vitae elit libero, a pharetra augue mollis interdum.
             </span>
             <br></br>
-            <button className="btn btn-primary m-4">LINK</button>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <StaticImage
-            src="../images/slide_3.jpg"
-            className="d-block w-100"
-            formats={["AUTO", "WEBP"]}
-            alt="slide3"
-          />
-          {/* <Carousel.Caption>
-            <h3>LORE IPSUM DOLOR SIT AMET</h3>
-            <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
-            </span>
-            <br></br>
-            <button className="btn btn-primary m-4">LINK</button>
-          </Carousel.Caption> */}
+            <button className="btn btn-primary m-4">LINK</button> */}
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </Slider>
@@ -63,8 +47,7 @@ function Slide() {
 //style
 const Slider = styled.div`
   margin-bottom: 3rem;
-  border-bottom: #3e281c solid 0.5rem;
-
+  
   .subTitle {
   }
   .btn-primary {

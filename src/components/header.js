@@ -21,7 +21,8 @@ const HeaderSection = ({ siteTitle }) => (
         <div className="text-start ms-3">
           <h1>ELAMortuary</h1>
           <p className="lead">
-            Some description for the project
+            Villages to Empire: 4,000 Years of Death and Society in Elam
+            (4500-525 BCE)
           </p>
         </div>
       </div>
