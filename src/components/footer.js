@@ -1,12 +1,11 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import styled from "styled-components"
 import { Link } from "gatsby"
 import { Container } from "react-bootstrap"
 
 const FooterSection = () => {
   return (
-    <Footer>
+    <footer>
       <Container>
         <div className="d-flex flex-row align-items-center mb-3">
           <div className="p-3">
@@ -72,18 +71,8 @@ const FooterSection = () => {
           </div>
         </div>
       </Container>
-    </Footer>
+    </footer>
   )
 }
-
-//style
-const Footer = styled.footer`
-  background-color: #ececec;
-  border-top: #000 solid 0.5rem;
-  min-height: auto;
-  margin-top: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-`
 
 export default FooterSection

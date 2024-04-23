@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Link, withPrefix } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import styled from "styled-components"
 import { Container } from "react-bootstrap"
 
 const HeaderSection = ({ siteTitle }) => (
-  <Header>
+  <header>
     <Container>
       <div className="d-sm-flex align-items-center text-center">
         <Link to={withPrefix("/")}>
@@ -27,21 +26,7 @@ const HeaderSection = ({ siteTitle }) => (
         </div>
       </div>
     </Container>
-  </Header>
+  </header>
 )
-
-const Header = styled.header`
-  background-color: #fe04fc;
-  color: #ffffff;
-  margin-bottom: 5rem;
-
-  .gatsby-image-wrapper {
-    background-color: #ffffff;
-    img {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
-`
 
 export default HeaderSection
