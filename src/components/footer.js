@@ -15,7 +15,7 @@ const FooterSection = () => {
                 width={200}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="ELAMortuary: Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)"
+                alt= "ELAMortuary: Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)" 
                 className="img-fluid"
               />
             </Link>
