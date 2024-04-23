@@ -7,8 +7,8 @@ const FooterSection = () => {
   return (
     <footer>
       <Container>
-        <div className="d-flex flex-row align-items-center mb-3">
-          <div className="p-3">
+        <div className="d-md-flex flex-row align-items-center mb-3">
+          <div className="p-3 text-center">
             <Link to="/">
               <StaticImage
                 src="../images/elamortuary-logo.png"
