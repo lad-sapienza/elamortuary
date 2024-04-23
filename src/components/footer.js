@@ -13,10 +13,10 @@ const FooterSection = () => {
             <Link to="/">
               <StaticImage
                 src="../images/elamortuary-logo.png"
-                width={100}
+                width={200}
                 quality={80}
                 formats={["AUTO", "WEBP"]}
-                alt="LAD: Laboratorio di Archeologia Digitale alla Sapienza"
+                alt="ELAMortuary: Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)"
                 className="img-fluid"
               />
             </Link>
@@ -51,6 +51,24 @@ const FooterSection = () => {
               Union’s Horizon 2020 research and innovation programme under the
               Marie Skłodowska-Curie grant agreement No. 892581 — ELAMortuary.
             </p>
+            
+
+            <StaticImage
+                src="../images/daal-orientale.png"
+                width={150}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="ELAMortuary: Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)"
+                className="img-fluid m-2"
+              />
+            <StaticImage
+                src="../images/horizon-2020.jpg"
+                width={150}
+                quality={80}
+                formats={["AUTO", "WEBP"]}
+                alt="ELAMortuary: Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)"
+                className="img-fluid"
+              />
           </div>
         </div>
       </Container>
