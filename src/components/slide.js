@@ -9,34 +9,58 @@ function Slide() {
       <Carousel>
         <Carousel.Item>
           <StaticImage
-            src="../images/susa.jpg"
+            src="../images/Susa-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="Susa"
+            alt="Susa (©Loghman Ahmadzadeh)"
           />
            <Carousel.Caption>
             <h3>Susa</h3>
-            {/* <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            <span className="subTitle">
+              © Loghman Ahmadzadeh
             </span>
-            <br></br>
-            <button className="btn btn-primary m-4">LINK</button> */}
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/chogha_zanbil.jpg"
+            src="../images/Chogha-Mish-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="Chogha Zanbil"
+            alt="Chogha Mish (@ Loghman Ahmadzadeh)"
+          />
+          <Carousel.Caption>
+            <h3>Chogha Mish</h3>
+            <span className="subTitle">
+            @ Loghman Ahmadzadeh
+            </span>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <StaticImage
+            src="../images/Chogha-Zanbil-Loghman-Ahmadzadeh.jpg"
+            className="d-block w-100"
+            formats={["AUTO", "WEBP"]}
+            alt="Chogha Zanbil (@ Loghman Ahmadzadeh)"
           />
           <Carousel.Caption>
             <h3>Chogha Zanbil</h3>
-            {/* <span className="subTitle">
-              Nulla vitae elit libero, a pharetra augue mollis interdum.
+            <span className="subTitle">
+            @ Loghman Ahmadzadeh
             </span>
-            <br></br>
-            <button className="btn btn-primary m-4">LINK</button> */}
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <StaticImage
+            src="../images/Tall-e Ghazir-Mound-A-Loghman-Ahmadzadeh.jpg"
+            className="d-block w-100"
+            formats={["AUTO", "WEBP"]}
+            alt="Tall-e Ghazir, Mound A (@ Loghman Ahmadzadeh)"
+          />
+          <Carousel.Caption>
+            <h3>Tall-e Ghazir, Mound A</h3>
+            <span className="subTitle">
+            @ Loghman Ahmadzadeh
+            </span>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
