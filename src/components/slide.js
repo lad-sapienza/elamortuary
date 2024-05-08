@@ -12,7 +12,7 @@ function Slide() {
             src="../images/Susa-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="Susa (©Loghman Ahmadzadeh)"
+            alt="Susa (© Loghman Ahmadzadeh)"
           />
            <Carousel.Caption>
             <h3>Susa</h3>
@@ -26,12 +26,12 @@ function Slide() {
             src="../images/Chogha-Mish-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="Chogha Mish (@ Loghman Ahmadzadeh)"
+            alt="Chogha Mish (© Loghman Ahmadzadeh)"
           />
           <Carousel.Caption>
             <h3>Chogha Mish</h3>
             <span className="subTitle">
-            @ Loghman Ahmadzadeh
+            © Loghman Ahmadzadeh
             </span>
           </Carousel.Caption>
         </Carousel.Item>
@@ -40,12 +40,12 @@ function Slide() {
             src="../images/Chogha-Zanbil-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="Chogha Zanbil (@ Loghman Ahmadzadeh)"
+            alt="Chogha Zanbil (© Loghman Ahmadzadeh)"
           />
           <Carousel.Caption>
             <h3>Chogha Zanbil</h3>
             <span className="subTitle">
-            @ Loghman Ahmadzadeh
+            © Loghman Ahmadzadeh
             </span>
           </Carousel.Caption>
         </Carousel.Item>
@@ -54,12 +54,12 @@ function Slide() {
             src="../images/Tall-e Ghazir-Mound-A-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
-            alt="Tall-e Ghazir, Mound A (@ Loghman Ahmadzadeh)"
+            alt="Tall-e Ghazir, Mound A (© Loghman Ahmadzadeh)"
           />
           <Carousel.Caption>
             <h3>Tall-e Ghazir, Mound A</h3>
             <span className="subTitle">
-            @ Loghman Ahmadzadeh
+            © Loghman Ahmadzadeh
             </span>
           </Carousel.Caption>
         </Carousel.Item>
