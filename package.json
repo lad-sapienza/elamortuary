@@ -1,5 +1,5 @@
 {
-  "name": "@lab-archeologia-digitale/elamortuary",
+  "name": "@lad-sapienza/elamortuary",
   "private": false,
   "description": "ELAMortuary",
   "version": "2.0.4",
@@ -48,11 +48,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lab-archeologia-digitale/gatsby-directus-ui.git"
+    "url": "git+https://github.com/lad-sapienza/gatsby-directus-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/lab-archeologia-digitale/gatsby-directus-ui/issues"
+    "url": "https://github.com/lad-sapienza/gatsby-directus-ui/issues"
   },
-  "homepage": "https://github.com/lab-archeologia-digitale/gatsby-directus-ui#readme",
+  "homepage": "https://github.com/lad-sapienza/gatsby-directus-ui#readme",
   "main": "gatsby-browser.js"
 }

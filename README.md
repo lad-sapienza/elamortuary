@@ -6,7 +6,7 @@ It is based on Gatsby and implements some data-oriented complements for connecti
 ## How to install
 
 ```bash
-npx gatsby new my-new-site https://github.com/lab-archeologia-digitale/sCMS
+npx gatsby new my-new-site https://github.com/lad-sapienza/sCMS
 cd my-new-site
 npm i
 npm start

@@ -17,7 +17,7 @@ module.exports = {
     title: `ELAMortuary`,
     description: `ELAMortuary ... todo description`,
     author: `Julian Bogdani <julian.bogdani@uniroma1.it>`,
-    siteUrl: `https://github.com/lab-archeologia-digitale/gatsby-directus-ui#readme`,
+    siteUrl: `https://github.com/lad-sapienza/gatsby-directus-ui#readme`,
   },
   plugins: [
     `gatsby-plugin-image`,
