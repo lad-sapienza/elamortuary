@@ -1,3 +1,27 @@
 //Here you can customize bootstrap
-$primary: #663399;
+$primary: #910d0d;
 @import "~bootstrap/scss/bootstrap.scss";
+
+
+header{
+  background-color: $primary;
+  color: #ffffff;
+  margin-bottom: 5rem;
+  padding: .8rem;
+
+  .gatsby-image-wrapper {
+    img {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+footer{
+  border-top: $primary solid 0.5rem;
+  background-color: #ececec;
+  min-height: auto;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

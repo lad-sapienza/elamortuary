@@ -10,18 +10,17 @@ menu_position: 1
 # Map of the sites
 
 
-import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
+import { MapLeaflet, RasterLayer, VectorLayer } from "../../modules/scms.js"
 
-<MapComp height="600px">
+<MapLeaflet height="600px">
     <VectorLayer 
       name="Sites"
-      path2geojson="../data/elamortuary.geojson"
+      source={{
+        path2data: "/data/elamortuary.geojson"
+      }}
       fitToContent={true}
       checked={true}
-      popupTemplate={
-      (attribs) => { return `<p><strong>${attribs.site}</strong>`; }
-      }
-      
+      popupTemplate="<p><strong>${site}</strong>"
     />
 
     <RasterLayer 
@@ -38,4 +37,4 @@ import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
       name="Esri Streets"
       url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}" />
     
-  </MapComp>
+  </MapLeaflet>

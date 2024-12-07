@@ -51,7 +51,7 @@ function Slide() {
         </Carousel.Item>
         <Carousel.Item>
           <StaticImage
-            src="../images/Tall-e Ghazir-Mound-A-Loghman-Ahmadzadeh.jpg"
+            src="./images/Tall-e Ghazir-Mound-A-Loghman-Ahmadzadeh.jpg"
             className="d-block w-100"
             formats={["AUTO", "WEBP"]}
             alt="Tall-e Ghazir, Mound A (© Loghman Ahmadzadeh)"
