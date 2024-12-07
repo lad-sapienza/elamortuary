@@ -1,0 +1,41 @@
+---
+title: "Map of the sites"
+date: "2023-10-01"
+slug: "webgis"
+description: "An easy to use component for building powerful and fully customizable maps"
+menu_position: 1
+---
+
+
+# Map of the sites
+
+
+import { MapComp, RasterLayer, VectorLayer } from "../modules/myMap/myMap.js"
+
+<MapComp height="600px">
+    <VectorLayer 
+      name="Sites"
+      path2geojson="../data/elamortuary.geojson"
+      fitToContent={true}
+      checked={true}
+      popupTemplate={
+      (attribs) => { return `<p><strong>${attribs.site}</strong>`; }
+      }
+      
+    />
+
+    <RasterLayer 
+      name="Open Street Map"
+      url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      attribution= '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' />
+    
+    <RasterLayer 
+      name="Esri Imagery/Satellite"
+      url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      checked={true} />
+    
+    <RasterLayer 
+      name="Esri Streets"
+      url = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}" />
+    
+  </MapComp>
