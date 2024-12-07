@@ -17,7 +17,7 @@ module.exports = {
     title: `ELAMortuary`,
     description: `ELAMortuary ... todo description`,
     author: `Julian Bogdani <julian.bogdani@uniroma1.it>`,
-    siteUrl: `https://github.com/lad-sapienza/gatsby-directus-ui#readme`,
+    siteUrl: `https://github.com/lad-sapienza/elamortuary`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -42,7 +42,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/usr/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -62,7 +62,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/elamortuary-logo.png`, // This path is relative to the root of the site.
+        icon: `src/usr/images/elamortuary-logo.png`,
       },
     },
     {
