@@ -1,86 +1,56 @@
 {
-  "name": "@lad-sapienza/scms",
-  "private": false,
-  "description": "A simple starter to get up and developing quickly with Gatsby 5 and Bootstrap 5",
-  "version": "4.5.0",
+  "name": "elamortuary",
+  "private": true,
+  "description": "ELAMortuary — Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE). A Marie Skłodowska-Curie project hosted by Università di Napoli \"L'Orientale\". Built with Astro and s:CMS.",
+  "version": "2.0.0",
+  "type": "module",
   "author": {
     "name": "Julian Bogdani",
     "email": "julian.bogdani@uniroma1.it",
-    "url": "https://lad.uniroma1.it"
+    "url": "https://lad.saras.uniroma1.it"
   },
-  "contributors": [
-    {
-      "name": "Eleonora Iacopini",
-      "email": "eleonora.iacopini@uniroma1.it",
-      "url": "https://lad.uniroma1.it"
-    },
-    {
-      "name": "Erasmo Di Fonso",
-      "email": "erasmo.difonso@uniroma1.it",
-      "url": "https://lad.uniroma1.it"
-    }
-  ],
-  "dependencies": {
-    "@mdx-js/react": "^3.1.0",
-    "babel-plugin-styled-components": "^2.1.4",
-    "bootstrap": "^5.3.3",
-    "csvtojson": "^2.0.10",
-    "gatsby": "^5.13.7",
-    "gatsby-plugin-image": "^3.13.1",
-    "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-mdx": "^5.13.1",
-    "gatsby-plugin-react-leaflet": "^4.0.3",
-    "gatsby-plugin-sass": "^6.13.1",
-    "gatsby-plugin-sharp": "^5.13.1",
-    "gatsby-plugin-styled-components": "^6.13.1",
-    "gatsby-remark-autolink-headers": "^6.13.1",
-    "gatsby-remark-prismjs": "^7.13.2",
-    "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-transformer-sharp": "^5.13.1",
-    "geojson-bbox": "^0.0.1",
-    "leaflet": "^1.9.4",
-    "maplibre-gl": "^4.7.1",
-    "prismjs": "^1.29.0",
-    "react": "^18.3.1",
-    "react-bootstrap": "^2.10.5",
-    "react-bootstrap-icons": "^1.11.4",
-    "react-data-table-component": "^7.6.2",
-    "react-dom": "^18.3.1",
-    "react-leaflet": "^4.2.1",
-    "react-map-gl": "^7.1.7",
-    "react-router-dom": "^6.27.0",
-    "styled-components": "^6.1.13"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3",
-    "sass": "^1.80.4"
-  },
-  "keywords": [
-    "gatsby",
-    "static site builder",
-    "research data publishing",
-    "datatable",
-    "leaflet",
-    "maplibre"
-  ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "upgrage-main": "command -v rsync >/dev/null && mkdir tmp && wget https://github.com/lab-archeologia-digitale/sCMS/archive/refs/heads/main.zip -O tmp/scms.zip && unzip tmp/scms.zip -d tmp/ && rsync -a  --exclude .cache --exclude .env.development --exclude .git --exclude .gitignore --exclude gatsby-config.js --exclude node_modules --exclude public --exclude README.md --exclude tmp --exclude src/usr --exclude static --delete --dry-run tmp/sCMS-main/ . && rm -rf tmp",
-    "upgrage-dev": "command -v rsync >/dev/null && mkdir tmp && wget https://github.com/lab-archeologia-digitale/sCMS/archive/refs/heads/dev.zip -O tmp/scms.zip && unzip tmp/scms.zip -d tmp/ && rsync -a  --exclude .cache --exclude .env.development --exclude .git --exclude .gitignore --exclude gatsby-config.js --exclude node_modules --exclude public --exclude README.md --exclude tmp --exclude src/usr --exclude static --delete --dry-run tmp/sCMS-dev/ . && rm -rf tmp"
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-remark": "^7.2.4",
+    "@lad-sapienza/scms-core": "^0.1.0-alpha.9",
+    "astro": "^7.2.4",
+    "bootstrap": "^5.3.8",
+    "maplibre-gl": "^5.21.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "rehype-slug": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "sass": "^1.98.0",
+    "sharp": "^0.34.4",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@vitejs/plugin-react": "^5.1.4"
+  },
+  "keywords": [
+    "astro",
+    "static-site",
+    "cms",
+    "archaeology",
+    "elam",
+    "webgis"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lad-sapienza/sCMS.git"
+    "url": "git+https://github.com/lad-sapienza/elamortuary.git"
   },
   "bugs": {
-    "url": "https://github.com/lad-sapienza/sCMS/issues"
+    "url": "https://github.com/lad-sapienza/elamortuary/issues"
   },
-  "homepage": "https://scms.lad-sapienza.it",
-  "main": "gatsby-browser.js"
+  "homepage": "https://lad-sapienza.github.io/elamortuary/"
 }

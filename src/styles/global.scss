@@ -1,0 +1,64 @@
+// ---------------------------------------------------------------------------
+// ELAMortuary theme — ported from the previous Gatsby `src/usr/layout/layout.scss`
+// Brand colour: deep Elamite red.
+// ---------------------------------------------------------------------------
+$primary: #910d0d;
+
+@import "bootstrap/scss/bootstrap";
+
+// --- Header -----------------------------------------------------------------
+.site-header {
+  background-color: $primary;
+  color: #ffffff;
+  margin-bottom: 5rem;
+  padding: 0.8rem;
+
+  a {
+    color: #ffffff;
+  }
+
+  img {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 0.25rem;
+    color: #ffffff;
+  }
+
+  .lead {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+  }
+}
+
+// --- Navbar ---------------------------------------------------------------
+.navbar.bg-body-tertiary {
+  background-color: #ececec !important;
+}
+
+// --- Footer ---------------------------------------------------------------
+.site-footer {
+  border-top: $primary solid 0.5rem;
+  background-color: #ececec;
+  min-height: auto;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .footer-note {
+    border-left: 1px solid $primary;
+    padding-left: 1rem;
+  }
+}
+
+// --- Generic --------------------------------------------------------------
+main {
+  min-height: 60vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

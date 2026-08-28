@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/elamortuary-logo.png";
+import daalOrientale from "../assets/daal-orientale.png";
+import horizon2020 from "../assets/horizon-2020.jpg";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="d-md-flex flex-row align-items-center mb-3">
+      <div class="p-3 text-center">
+        <a href={base}>
+          <Image
+            src={logo}
+            width={250}
+            quality={80}
+            alt="ELAMortuary: Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)"
+            class="img-fluid"
+          />
+        </a>
+      </div>
+      <div class="p-3 footer-note">
+        <p>
+          The <strong>ELAMortuary</strong> database is the outcome of the project{" "}
+          <em>Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)</em>{" "}
+          carried out by the project researcher, Yasmina Wicks, in the frame of a{" "}
+          <a
+            href="https://cordis.europa.eu/project/id/892581"
+            rel="noreferrer noopener"
+            target="_blank">Marie Skłodowska-Curie Individual Fellowship</a>{" "}
+          hosted by{" "}
+          <a href="https://www.unior.it" rel="noreferrer noopener" target="_blank"
+            >Università di Napoli, &ldquo;L&rsquo;Orientale&rdquo;</a>{" "}
+          (2022-2024). <br />
+          The project research and database were funded by the European Union&rsquo;s Horizon
+          2020 research and innovation programme under the Marie Skłodowska-Curie grant
+          agreement No. 892581 — ELAMortuary.
+        </p>
+
+        <Image
+          src={daalOrientale}
+          width={150}
+          quality={80}
+          alt="DAAL — Dipartimento Asia, Africa e Mediterraneo, Università di Napoli L'Orientale"
+          class="img-fluid m-2"
+        />
+        <Image
+          src={horizon2020}
+          width={150}
+          quality={80}
+          alt="European Union's Horizon 2020 research and innovation programme"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,38 @@
+---
+title: "Map of the sites"
+description: "An interactive map of the archaeological sites represented in the ELAMortuary burial database, across Khuzestan province in south-west Iran."
+---
+
+import { Map } from "@lad-sapienza/scms-core/components/Map";
+
+export const dataBase = import.meta.env.BASE_URL;
+
+# Map of the sites
+
+<Map
+  client:only="react"
+  height="600px"
+  center="48.75,31.85,7"
+  navigationControl="top-left"
+  scaleControl="bottom-left"
+  fullscreenControl="top-right"
+  layerControl="top-right"
+  baseLayers={["EsriSatellite", "OSM", "EsriStreets"]}
+  overlayLayers={[
+    {
+      name: "Sites",
+      source: { type: "geojson", url: `${dataBase}data/elamortuary.geojson` },
+      popupTemplate: "<strong>${site}</strong>",
+      fitToContent: true,
+      style: {
+        type: "circle",
+        paint: {
+          "circle-radius": 7,
+          "circle-color": "#910d0d",
+          "circle-stroke-width": 1.5,
+          "circle-stroke-color": "#ffffff",
+        },
+      },
+    },
+  ]}
+/>

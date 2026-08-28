@@ -1,0 +1,54 @@
+---
+title: "Data"
+description: "The full ELAMortuary burial catalogue — a searchable, sortable table of burials from Susa and other sites in Khuzestan, compiled from published and unpublished excavation sources."
+---
+
+import { DataTb } from "@lad-sapienza/scms-core/components/DataTb";
+
+export const dataBase = import.meta.env.BASE_URL;
+
+# Data
+
+<DataTb
+  client:load
+  csv={`${dataBase}data/elamortuary.csv`}
+  searchable
+  pagination={{ pageSize: 25, showPageSize: true }}
+  initialSort={{ columnKey: "Database ID", direction: "asc" }}
+  columns={[
+    { key: "Database ID", header: "Database ID", sortable: true },
+    { key: "Proposed date", header: "Proposed date", sortable: true },
+    { key: "Site", header: "Site", sortable: true },
+    { key: "Field No.", header: "Field No.", sortable: true },
+    { key: "Trench/location", header: "Trench/location", sortable: true },
+    { key: "Level/stratigraphy", header: "Level/stratigraphy", sortable: true },
+    { key: "Square/Locus", header: "Square/Locus", sortable: true },
+    { key: "MNI", header: "MNI", sortable: true },
+    { key: "Age", header: "Age", sortable: true },
+    { key: "Sex/gender", header: "Sex/gender", sortable: true },
+    { key: "Disposal area", header: "Disposal area", sortable: true },
+    { key: "Burial type", header: "Burial type", sortable: true },
+    { key: "Construction, container, wrapping", header: "Construction, container, wrapping", sortable: true },
+    { key: "Alignment (orientation)", header: "Alignment (orientation)", sortable: true },
+    { key: "Body position", header: "Body position", sortable: true },
+    { key: "Vessels (pottery)", header: "Vessels (pottery)", sortable: true },
+    { key: "Vessels (silicious)", header: "Vessels (silicious)", sortable: true },
+    { key: "Vessels (metal)", header: "Vessels (metal)", sortable: true },
+    { key: "Vessels (stone)", header: "Vessels (stone)", sortable: true },
+    { key: "Jewellery", header: "Jewellery", sortable: true },
+    { key: "Pins", header: "Pins", sortable: true },
+    { key: "Weapons", header: "Weapons", sortable: true },
+    { key: "Tools", header: "Tools", sortable: true },
+    { key: "Glyptic", header: "Glyptic", sortable: true },
+    { key: "Animal remains", header: "Animal remains", sortable: true },
+    { key: "Miscellaneous grave goods", header: "Miscellaneous grave goods", sortable: true },
+    { key: "Possible additional grave goods", header: "Possible additional grave goods", sortable: true },
+    { key: "Other excavator notes", header: "Other excavator notes", sortable: true },
+    { key: "Data source", header: "Data source", sortable: true },
+    { key: "Data collator notes", header: "Data collator notes", sortable: true },
+  ]}
+/>
+
+---
+
+<a href={`${dataBase}data/elamortuary.csv`} download>Download data as CSV</a>

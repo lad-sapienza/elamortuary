@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/elamortuary-logo.png";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<header class="site-header">
+  <div class="container">
+    <div class="d-sm-flex align-items-center text-center">
+      <a href={base}>
+        <Image src={logo} width={150} quality={80} alt="ELAMortuary" class="img-fluid" />
+      </a>
+      <div class="text-start ms-3">
+        <h1>ELAMortuary</h1>
+        <p class="lead">
+          Villages to Empire: 4,000 Years of Death and Society in Elam (4500-525 BCE)
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
